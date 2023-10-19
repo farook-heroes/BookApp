@@ -79,7 +79,8 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = "core.urls"
 
-HOME_TEMPLATES      = os.path.join(BASE_DIR, 'templates') 
+BASE_TEMPLATES      = os.path.join(BASE_DIR, 'home/templates') 
+HOME_TEMPLATES      = os.path.join(BASE_DIR, 'home/templates') 
 TEMPLATE_DIR_DATATB = os.path.join(BASE_DIR, "django_dyn_dt/templates") # <-- NEW: Dynamic_DT
 
 TEMPLATES = [
