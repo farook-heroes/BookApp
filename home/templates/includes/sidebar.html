@@ -83,6 +83,10 @@
           <a href="{% url 'basic_tables' %}" class="nav-link "><span class="pcoded-micon"><i
                 class="feather icon-server"></i></span><span class="pcoded-mtext">Table</span></a>
         </li>
+
+        <li data-username="Sample Page" class="nav-item {% if 'sample_page' in segment %}active{% endif %}"><a href="{% url 'sample_page' %}" class="nav-link"><span
+          class="pcoded-micon"><i class="feather icon-target"></i></span><span class="pcoded-mtext">Calendar</span></a>
+        </li>
        
         {% endif %}
       </ul>

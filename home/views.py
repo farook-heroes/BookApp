@@ -21,3 +21,11 @@ def tables(request):
     'segment': 'tables'
   }
   return render(request, "pages/dynamic-tables.html", context)
+
+@login_required(login_url='/accounts/login/')
+def sample_page(request):
+  
+  context = {
+    'segment': 'sample_page',
+  }
+  return render(request, 'pages/sample-page.html', context)
